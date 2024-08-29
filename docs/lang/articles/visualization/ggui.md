@@ -430,7 +430,7 @@ window = ti.ui.Window("Test for GUI", res=(512, 512))
 gui = window.get_gui()
 value = 0
 color = (1.0, 1.0, 1.0)
-with gui.sub_window("Sub Window", x=10, y=10, width=300, height=100):
+with gui.sub_window("Sub Window", x=0.05, y=0.05, width=0.6, height=0.3):
     gui.text("text")
     is_clicked = gui.button("name")
     value = gui.slider_float("name1", value, minimum=0, maximum=100)
